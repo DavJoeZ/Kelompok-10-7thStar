@@ -8,6 +8,9 @@
 -   Vincent (221113855)
 -   Stevie Sawita (221110019)
 
+# Link OneDrive jika tidak bisa di pull
+https://mikroskilacid-my.sharepoint.com/:f:/g/personal/221110724_students_mikroskil_ac_id/EnXz0znk9PtLiLnwDuR4Eb4B52gZNKXn6MrHP9hVNI5Qwg?e=WZqpkF
+
 # Cara Menggunakan
 
 1. Install requirement yang dibutuhkan di `requirement.txt` dengan menjalankan kode ini di terminal
