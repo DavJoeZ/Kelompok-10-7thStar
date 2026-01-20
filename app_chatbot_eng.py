@@ -22,7 +22,7 @@ TOP_K_CONTEXT = 3     # contexts sent to model
 TOP_K_RETURN = 5      # how many recipes to show when user asks details
 MMR_LAMBDA = 0.6      # diversity vs relevance (0..1)
 EMBED_DIM = 384       # change if your embedding dim differs
-MODEL_OLLAMA = "deepseek-r1:1.5b"
+MODEL_OLLAMA = "deepseek-r1"
 MAX_CONTEXT_CHARS = 1400
 
 # ====== UI PAGE ======

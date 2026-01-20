@@ -3,6 +3,7 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 
 CSV_PATH = "dataset_recipes.csv"
+OUTPUT_PARQUET = "recipe_embeddings.parquet"
 OUTPUT_METADATA = "recipe_metadata.csv"
 TEXT_COLUMN = "combined_text"
 MODEL_NAME = "BAAI/bge-small-en-v1.5"
@@ -26,6 +27,7 @@ texts = df[TEXT_COLUMN].astype(str).tolist()
 embeddings = model.encode(texts, batch_size=32, show_progress_bar=True, convert_to_numpy=True)
 
 df["embedding"] = embeddings.tolist()
+df.to_parquet(OUTPUT_PARQUET, index=False)
 
 # save metadata CSV
 # minimal 3 kolom ini sudah cukup untuk chatbot scr RAG
